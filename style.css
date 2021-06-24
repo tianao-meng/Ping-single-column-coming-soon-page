@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  padding: 50px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.heading h1 {
+  font-weight: 300;
+  padding: 60px 0 20px;
+}
+
+h1,
+p {
+  color: hsl(0, 0%, 59%);
+}
+
+.heading h1 span {
+  font-weight: 700;
+  color: black;
+}
+
+.heading p {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.heading .form-control {
+  width: 300px;
+  margin: auto;
+}
+
+.heading .form-control input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  color: hsl(223, 87%, 63%);
+  border: 1px solid hsl(223, 87%, 63%);
+  border-radius: 30px;
+  outline: none;
+}
+
+.heading .form-control input::placeholder {
+  color: hsl(223, 87%, 63%);
+}
+
+.heading .form-control button {
+  width: 100%;
+  padding: 8px;
+  font-family: inherit;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border: 2px solid hsl(223, 87%, 63%);
+  border-radius: 30px;
+  transition: background-color 0.4s;
+}
+
+.heading .form-control button:hover {
+  background-color: transparent;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+
+.showcase {
+  padding: 50px 20px 80px;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul li {
+  margin: 0 20px;
+}
+
+.footer ul li a {
+  color: hsl(223, 87%, 63%);
+  transition: background-color 0.4s;
+}
+
+.footer ul li a:hover {
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer p {
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+@media (min-width: 700px) {
+  .heading h1 {
+    font-size: 36px;
+  }
+
+  .heading .form-control {
+    width: auto;
+  }
+
+  .heading .form-control input,
+  .heading .form-control button {
+    width: auto;
+    padding: 12px 20px;
+  }
+
+  .heading .form-control button {
+    width: 150px;
+  }
+
+  .heading .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .showcase img {
+    width: 600px;
+  }
+}
